@@ -1,0 +1,39 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: blue; 
+    margin: 50px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#quiz-container {
+    padding: 16px;
+    background-color: white;
+}
+
+#question {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(3, 0, 0);
+}
+
+#timer {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(243, 238, 238);
+}
+
+
+
