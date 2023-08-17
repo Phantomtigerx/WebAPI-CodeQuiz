@@ -15,7 +15,7 @@ var questions = [
 
     {
         question: 'Upon encountering empty statements, JavaScript _________.',
-        answers: [ 'Throws an error', 'Prompts to complete the statement', 'Ignores the statements', 'Halts the execution of the program'],
+        answers: ['Throws an error', 'Prompts to complete the statement', 'Ignores the statements', 'Halts the execution of the program'],
         correctIndex: 2
     },
 
@@ -36,7 +36,7 @@ var questions = [
 // timer
 let currentQuestionIndex = 0;
 let score = 0;
-let timeLeft = 60; 
+let timeLeft = 60;
 
 startButton.addEventListener('click', startGame);
 
@@ -61,12 +61,12 @@ function showQuestion() {
 
 // Subtract time for incorrect answer
 function selectAnswer(index) {
-    
+
     if (index === questions[currentQuestionIndex].correctIndex) {
         score++;
-    
+
     } else {
-        timeLeft -= 10; 
+        timeLeft -= 10;
     }
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length && timeLeft > 0) {
@@ -97,7 +97,7 @@ function endGame() {
     var scoreDisplay = document.getElementById('score-display');
     scoreDisplay.textContent = `Your final score is: ${score}`;
     console.log('Final Score', score);
-  }
+}
 
 saveScoreButton.addEventListener('click', () => {
     var initials = document.getElementById('initials').value;
