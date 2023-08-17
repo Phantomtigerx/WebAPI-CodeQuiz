@@ -20,19 +20,19 @@ button:hover {
 
 #quiz-container {
     padding: 16px;
-    background-color: white;
+    background-color: rgb(8, 1, 1);
 }
 
 #question {
     font-size: 20px;
     margin-bottom: 20px;
-    color: rgb(3, 0, 0);
+    color: rgb(250, 245, 245);
 }
 
 #timer {
     font-size: 20px;
     margin-bottom: 20px;
-    color: rgb(243, 238, 238);
+    color: rgb(19, 10, 10);
 }
 
 

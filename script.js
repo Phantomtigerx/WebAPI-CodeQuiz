@@ -81,7 +81,7 @@ function startTimer() {
     var timerInterval = setInterval(() => {
         timeLeft--;
         timerElement.textContent = timeLeft + ' seconds left';
-        if (timeLeft <= 0) {
+        if (timeLeft <= 0 || currentQuestionIndex >= questions.length)  {
             clearInterval(timerInterval);
             endGame();
         }
